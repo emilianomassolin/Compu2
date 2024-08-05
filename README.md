@@ -20,6 +20,7 @@ Este proyecto permite aplicar filtros a una imagen utilizando procesamiento para
     python3 -m venv env
     source env/bin/activate   # En Windows, usa `env\Scripts\activate`
 3. **Instalar dependencias**
+    ```bash
     pip install -r requirements.txt
 ## Uso
 1. **Ejecutar el script**

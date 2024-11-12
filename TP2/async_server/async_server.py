@@ -43,7 +43,7 @@ async def handle_client(reader, writer):
         image.save(output, format="PNG")
 
         # Enviar al servidor de escalado
-        scaled_data = await send_to_scale_server(output.getvalue(), 0.7)  # Factor de escala 0.5 (ejemplo)
+        scaled_data = await send_to_scale_server(output.getvalue(), 0.7)  # Factor de escala 0.7 (ejemplo)
         print("Imagen escalada enviada de vuelta al cliente.")
         
         writer.write(scaled_data)

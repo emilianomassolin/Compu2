@@ -8,19 +8,25 @@ Crear entorno virtual
 Descargar requierements.txt
 usar el comando: pip install -r requierement.txt 
 ### 3 
-primero correr el servidor de scale (revisar estar en la ruta de la carpeta de cada servidor)
-con este comando:python scale_server.py
+primero correr el servidor de scale (revisar estar en la ruta de la carpeta de cada servidor)<br>
+con este comando:<br>
+python scale_server.py
 ### 4
-Luego el servidor de async_center (revisar estar en la ruta de la carpeta de cada servidor)
-con este comando:python async_server.py -i 127.0.0.1 -p 8888
+Luego el servidor de async_center (revisar estar en la ruta de la carpeta de cada servidor)<br>
+con este comando:<br>
+python async_server.py -i 127.0.0.1 -p 8888
 ### 5
-Por ultimo 
-usar este comando :python client.py
+Por ultimo <br>
+usar este comando :<br>
+python client.py
 ### 6 
-Luego de ejecutar el comando anterior va a parecer este mensaje:
-Por favor ingresa la ruta de la imagen que deseas procesar: <ruta_a_la_imagen>
+Luego de ejecutar el comando anterior va a parecer este mensaje:<br>
+Por favor ingresa la ruta de la imagen que deseas procesar: <ruta_a_la_imagen><br>
 ej: Por favor ingresa la ruta de la imagen que deseas procesar: image.png
-
+### 7 
+si se desea cambiar el escalado se puede hacer cambiando esta linea de codigo:<br>
+ scaled_data = await send_to_scale_server(output.getvalue(), 0.7)  # Factor de escala 0.7 (ejemplo)<br>
+ esta en async_server.py
 
 
 ### **Problema**
